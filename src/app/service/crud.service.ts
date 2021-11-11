@@ -41,7 +41,7 @@ export class CrudService {
 
   // Get single object
   GetBook(id: any): Observable<any> {
-    let API_URL = `${this.REST_API}/readt-book/${id}`;
+    let API_URL = `${this.REST_API}/read-book/${id}`;
     return this.httpClient.get(API_URL, { headers: this.httpHeaders }).pipe(
       map((res: any) => {
         return res || {};
